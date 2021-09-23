@@ -1,3 +1,5 @@
+
+
 .header {
     background-color: #1b2127;
     color: white;
@@ -108,12 +110,8 @@ h2 {
 }
 
 .hero {
-    height: 310px;
-    /* background-image: url("../imagenes/programador-full-stack.jpg"); */
+    /* height: 310px; */
     background-color: #1b2127;
-    /* background-size: 700px 500px; */
-    /* background-repeat: no-repeat; */
-    /* background-position-x: right; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +127,6 @@ h2 {
 
 .portfolio {
     background: #fafafa;
-    padding: 20px;
     padding: 80px 20px 20px 20px;
 }
 
@@ -357,7 +354,33 @@ button {
     
 }
 @media(max-width:630px){
+    .portfolio{
+        padding: 10px 0;
+    }
     .logo a img{
         display: none;
+    }
+    .container{
+        width: 90%;
+    }
+    .project{
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    .project-details{
+        padding: 8px 0 0 8px;
+    }
+    .event{
+        width: 100%;
+    }
+    .event-detail{
+        width: 90%;
+        margin: 0;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: flex-end;
     }
 }
