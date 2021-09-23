@@ -1,36 +1,3 @@
-/* reglas
-selectores
-declaraciones
-propiedades
-valores de css*/
-
-
-/* https://www.geogebra.org/graphing?lang=es */
-
-
-/*selector de etiqueta jemplos:  header --section -article -nav*/
-
-
-/*selector descendente ejemplo para llegar a la etiqueta <a   /> body header div nav ol li a{}*/
-
-
-/*selector de clase se hace con un . ejemplo: .link */
-
-
-/*selctor de id # se reconoce con # ejemplo: #portafolio*/
-
-
-/* gris oscuro = #1d252c */
-
-
-/* gris claro = #626262 */
-
-
-/* background gris  = #1b2127 */
-
-
-/* celeste = c*/
-
 .header {
     background-color: #1b2127;
     color: white;
@@ -51,7 +18,15 @@ valores de css*/
     position: fixed;
     /* Hacemos que la cabecera tenga una posición fija */
 }
-
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+}
 figure {
     margin: 0;
 }
@@ -133,7 +108,7 @@ h2 {
 }
 
 .hero {
-    height: 300px;
+    height: 310px;
     /* background-image: url("../imagenes/programador-full-stack.jpg"); */
     background-color: #1b2127;
     /* background-size: 700px 500px; */
@@ -145,39 +120,30 @@ h2 {
 }
 
 .hero-image {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 300px;
+    margin-bottom: 10px;
 }
 
 .portfolio {
     background: #fafafa;
     padding: 20px;
     padding: 80px 20px 20px 20px;
-    /* background: red; */
 }
 
 .project {
-    /* border-top: 10px solid red;
-    border-right: 10px solid green;
-    border-left: 10px solid blue;
-    border-bottom: 10px solid yellow; */
-    /* border-top-color: red;
-    border-top-width: 15px;
-    border-top-style: solid; */
     border: 1px solid gray;
-    /* border-radius: 50px 10px 10px 1px;  */
     border-radius: 10px;
-    /* margin-right: ;
-    margin-left: ;
-    margin-top: ; */
-    /* margin: 10px; */
     margin-bottom: 15px;
     padding: 20px;
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     box-shadow: 0px 0px 15px dimgrey;
-    /* con esta propiedad le asigno sombras a mi elemento */
+    flex-wrap: wrap;
 }
 
 .project-course,
@@ -185,11 +151,6 @@ h2 {
 .project-url {
     margin: 10px 0;
 }
-
-
-/* .project-date {
-    margin: 10px 0;
-} */
 
 .project-description {
     font-size: 20px;
@@ -206,15 +167,15 @@ h2 {
 }
 
 .project-details {
-    /* border: 1px solid gray;
-    border-radius: 10px; */
     width: 500px;
 }
 
 .project-imageContainer {
     width: 500px;
-    /* background-image: url("../imagenes/desarrollador.jpg"); */
     background-size: 500px 500px;
+}
+.project img{
+    width: 100%;
 }
 
 .event-total {
@@ -232,9 +193,8 @@ h2 {
 }
 
 .event {
-    /* border: 1px solid gray; */
     margin: 10px;
-    width: 480px;
+    width: 80%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -243,8 +203,9 @@ h2 {
 }
 
 .event img {
-    width: 480px;
+    width: 100%;
     height: 200px;
+    /* height: 200px; */
     object-fit: cover;
 }
 
@@ -287,15 +248,15 @@ h2 {
 /*Aporete de la comunidad para que se cambie el color del boton al poner el mouse sobre el*/
 
 .contact {
-    background-color: #056fff;
+    /* background-color: #056fff; */
+    /* background-color: #38b6ff; */
+    background-color: #1b2127;
     color: white;
-    height: 150px;
+    height: 22rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.social {}
 
 .social-link {
     display: inline-block;
@@ -309,7 +270,6 @@ h2 {
 
 .social-link.twitter {
     background-image: url("https://i.imgur.com/ygRt8hH.png");
-    /* background-size: 50px 50px; */
 }
 
 .social-link.facebook {
@@ -328,22 +288,28 @@ h2 {
     background-image: url("https://i.imgur.com/2R61Yu3.png");
 }
 
+.form-email{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 300px;
+}
+.form-email label{
+    margin-bottom: 8px;
+}
+
 .form-email input {
     border-color: gray;
     border-style: solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
-    background-image: url("../imagenes/email.jpg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
+}
+.form-email textarea{
+    min-height: 4rem;
 }
 
-
-/* Excelente aporte de la comunidad para que el puntero se haga manito*/
-
 button {
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -355,12 +321,11 @@ button {
     border-radius: 5px;
     width: 100px;
     transition: background-color .1s;
+    background-color: #056fff;
 }
 
 .form-email:hover button {
-    color: black;
-    border: 1px white;
-    background-color: white;
+    background-color: #38b6ff; 
 }
 
 .form-email h3 {
@@ -368,28 +333,31 @@ button {
 }
 
 .footer {
+    height: 9rem;
     color: white;
     background-color: #1b2127;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.footer img {
-    vertical-align: middle;
-}
+
 
 .footer a {
     color: white;
+    margin-left: 1rem;
 }
 
-.container {
-    /* border: 1px solid red; el borde es una gran forma de depuracion de estilos */
-    width: 1000px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-    flex-wrap: inherit;
+
+@media (max-width:950px){
+    .c-porfolio{
+        margin-top: 10rem;
+    }
+    
+}
+@media(max-width:630px){
+    .logo a img{
+        display: none;
+    }
 }
