@@ -23,7 +23,7 @@
             <nav class="menu">
                 <ol>
                     <li>
-                        <a class="link" href="#eventos">Sobre mí</a>
+                        <a class="link" href="#experiencia">Sobre mí</a>
                     </li>
                     <li>
                         <a class="link" href="#portafolio">Proyectos</a>
@@ -38,7 +38,8 @@
     <section class="hero">
         <div class="container" id="contain">
             <h1>
-                Hola soy<strong> William Cortés</strong> <br />Deseo dar lo<strong> mejor </strong> de mí <br />Como
+                Hola soy<strong> William Cortés</strong> <br />Deseo dar lo<strong> mejor </strong> de mí <br
+                    class="title_br" />Como
                 desarrollador <strong> Full Stack</strong>
             </h1>
             <!-- <img src="https://i.imgur.com/8eBFopB.jpg" width="500" height="auto" alt="imagen principal del sitio" />Imagen de portada -->
@@ -104,6 +105,50 @@
         <div class="container">
             <section class="event-list">
 
+
+                <article class="event_sec">
+                    <figure class="event-imageContainer">
+                        <a href="http://thebeatlesapi.herokuapp.com/" target="blank">
+                            <img class="event-image_sec" src="https://i.imgur.com/LdqYO0a.png" width="500"
+                                alt="The Beatles App" />
+                        </a>
+                    </figure>
+                    <div class="event-detail">
+                        <a href="http://thebeatlesapi.herokuapp.com/" target="blank">
+                            <h3 class="event-title">TheBeatlesApi.com</h3>
+                        </a>
+                        <p class="event-description">Api con los integrantes de la banda The Beatles. Esta es mi primera
+                            aplicación utilizando Node.js, para levantar un servidor. </p>
+                        <a class="event-url" href="http://thebeatlesapi.herokuapp.com/" target="blank">Ver
+                            TheBeatles</a>
+                    </div>
+                </article>
+
+                <article class="event_sec">
+                    <figure class="event-imageContainer">
+                        <a href="https://betiregister.herokuapp.com">
+                            <img class="event-image_sec" src="https://i.imgur.com/3sToEFY.png" width="500"
+                                alt="Imagen de registro de empresa beti" />
+                        </a>
+                    </figure>
+                    <div class="event-detail">
+                        <a href="https://betiregister.herokuapp.com" target="blank">
+                            <h3 class="event-title">BetiRegister.com</h3>
+                        </a>
+                        <p class="event-description">Interface con la posibilidad de que la persona pueda registrarse
+                            y luego iniciar sesión. Desarollada con React.js y vinculada a firebase.
+
+                        </p>
+                        <a class="event-url" href="https://betiregister.herokuapp.com/signup" target="blank">Ver
+                            Regístrate</a>
+                    </div>
+                </article>
+            </section>
+
+            <section id="experiencia" class="event-total">
+                <div class="container">
+                    <h2 class="event-list-title">Sobre mi </h2>
+                </div>
                 <article class="event">
                     <figure class="event-imageContainer">
                         <img class="event-image"
@@ -111,7 +156,7 @@
                             alt="Imagen de un desarrollador web" />
                     </figure>
                     <div class="event-detail">
-                        <h3 class="event-title">RichVersion.com</h3>
+                        <h3 class="event-title">William Cortés</h3>
                         <p class="event-description">Hola mi nombre es William, soy un Full Stack Developer entusiasta y
                             positivo.
                             Me encanta aprender, considero que es una herramienta para mejorar y evolucionar.
@@ -135,19 +180,6 @@
                             target="_blank">Ver CV</a>
                     </div>
                 </article>
-                <!-- <article class="event">
-                    <figure class="event-imageContainer">
-                        <img class="event-image" src="https://i.imgur.com/tU9Znlm.jpg" width="500" alt="" />
-                    </figure>
-                    <div class="event-detail">
-                        <h3 class="event-title">RichVersion.com</h3>
-                        <p class="event-description">Conéctate con su versión millonaria</p>
-                        <a class="event-url" href="https://www.youtube.com/watch?v=CjdQaleuOVI" target="_blank">Ver
-                            plática</a>
-                    </div>
-                </article> -->
-
-
             </section>
         </div>
     </section>
@@ -157,25 +189,18 @@
                 <h3>¿Creamos algo juntos?</h3>
                 <form class="form-email" target="_blank" action="https://formsubmit.co/williamcortes.co@gmail.com"
                     method="POST">
-
                     <label for="email">Cuál es tu nombre?</label>
-
                     <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required>
-
                     <label for="email">Déjame tu email</label>
-
                     <input type="email" name="email" class="form-control" placeholder="Email ✉" required>
-
-
                     <label>Cuentame un poco más!</label>
-
-                    <textarea placeholder="Cuéntame un poco más!" class="form-control" name="message" rows="5"
+                    <textarea placeholder="¿Qué tienes en mente?" class="form-control" name="message" rows="5"
                         required></textarea>
 
                     <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
                 </form>
             </div>
-            
+
             <div class="social">
                 <a href="https://twitter.com/totto2203" class="social-link twitter" target="_blank"></a>
                 <a href="https://facebook.com/william.cortes.545 " class="social-link facebook " target="_blank"></a>
@@ -187,15 +212,15 @@
         </div>
     </section>
     <footer class="footer ">
-            <div>
-                <p>  Modo Aprendizaje &#9997 </p>
-            </div>
-            <div>
-                <p>
-                    Hecho con &#128151 por <stong> 'Will I Am' </strong> <a
-                            href="https://williamcortes.github.io/">@WilliamCortés</a>
-                </p>
-            </div>
+        <div>
+            <p> Modo Aprendizaje &#9997 </p>
+        </div>
+        <div>
+            <p>
+                Hecho con &#128151 por <stong> 'Will I Am' </strong> <a
+                        href="https://williamcortes.github.io/">@WilliamCortés</a>
+            </p>
+        </div>
     </footer>
 </body>
 
